@@ -36,7 +36,7 @@ describe "Simon says" do
 
   describe "repeat" do
     it "should repeat" do
-      repeat("hello").should == "hello hello"
+      repeat_once("hello").should == "hello hello"
     end
 
     # Wait a second! How can you make the "repeat" method
@@ -75,7 +75,14 @@ describe "Simon says" do
     end
   end
 
-  describe "titleize" do
+  # describe "test" do
+  #   it "test" do
+  #     test().should == "hello"
+  #   end
+  # end
+
+  describe "titleize so" do
+    
     it "capitalizes a word" do
       titleize("jaws").should == "Jaws"
     end
@@ -91,6 +98,7 @@ describe "Simon says" do
     it "does capitalize 'little words' at the start of a title" do
       titleize("the bridge over the river kwai").should == "The Bridge over the River Kwai"
     end
+
   end
 
 end
